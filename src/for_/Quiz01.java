@@ -21,6 +21,22 @@ public class Quiz01 {
 		}
 		else
 			System.out.println("월을 다시 입력해주세요");
+
+		System.out.println("==================");
+		int even = 0;
+		int odd = 0;
+		
+		System.out.print("입력: ");	
+		int n1 = sc.nextInt();
+		
+		for(int i = 1; i <= n1; i++ ) {
+			if(i % 2 == 0) 
+				even += i;	
+			else 
+				odd += i;	
+		}
+		System.out.println("짝수의 합 : " + even);
+		System.out.println("홀수의 합 : " + odd);
 	}
 
 }
